@@ -1,6 +1,6 @@
 {
-  "name": "Python 3",
-  "image": "mcr.microsoft.com/devcontainers/python:3-bookworm", 
+  "name": "Universal Codespace",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -12,11 +12,7 @@
       ],
       "settings": {
         "livePreview.openPreviewTarget": "External Browser",
-        
-        // This experimental (as of 2 Sept) feature disables the automatic context attachment of current active file in Agent Mode
         "chat.implicitContext.suggestedContext": false,
-
-        // These are defaults but keeping them here for clarity and explicitness
         "github.copilot.chat.codeGeneration.useInstructionFiles": true,
         "chat.promptFilesLocations": {
           ".github/prompts": true
